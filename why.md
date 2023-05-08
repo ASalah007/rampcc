@@ -10,7 +10,6 @@
 
 notes: changing css might have side effects (I didn't change that much though ;) ), I would have checked other places this component is used to make sure that nothing is break and everything is working as expected, but since the application is one page I am good to go.
 
-
 # Bug 2 Solution
 
 1. while I was solving the first Bug I how the code is organized and I knew where I need to look.
@@ -25,4 +24,12 @@ notes: changing css might have side effects (I didn't change that much though ;)
 4. I also saw that you fetch all transactions after rendering using useEffect so I used the same function in the onChange callBack
 
 notes: doing so might have some performance issues since I will be sending request every time I filter by employee and then select all employees again. perhaps it would be better if I store this in variable after the first request but I am not sure.
+
+
+
+# Bug 4 Solution
+
+1. I read the code and found out that the paginatedTransactions.data contains a page of transactions
+2. so I need to store the previous transactions and append the new page to it.
+
 
