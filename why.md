@@ -39,3 +39,9 @@ notes: doing so might have some performance issues since I will be sending reque
 
 1. I went to where the button is renderd in the code.
 2. I then changed the rendereing condition to the appropriate one.
+
+# Bug 7 Solution
+
+1. I couldn't reproduce the bug as the behaviour was as expected
+
+note: I thing solving the previous bugs solved this issue.
