@@ -25,11 +25,12 @@ notes: changing css might have side effects (I didn't change that much though ;)
 
 notes: doing so might have some performance issues since I will be sending request every time I filter by employee and then select all employees again. perhaps it would be better if I store this in variable after the first request but I am not sure.
 
-
-
 # Bug 4 Solution
 
 1. I read the code and found out that the paginatedTransactions.data contains a page of transactions
 2. so I need to store the previous transactions and append the new page to it.
 
+# Bug 5 Solution
 
+1. I knew where is the select component is rendered so I checked it and found out that the loading is controlled by a state, which get set to true after the two requests finished
+2. replaced the loading state with employee.loading and then removed the loading state as it isn't used anywhere else.
