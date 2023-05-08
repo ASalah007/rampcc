@@ -34,3 +34,8 @@ notes: doing so might have some performance issues since I will be sending reque
 
 1. I knew where is the select component is rendered so I checked it and found out that the loading is controlled by a state, which get set to true after the two requests finished
 2. replaced the loading state with employee.loading and then removed the loading state as it isn't used anywhere else.
+
+# Bug 6 Solution
+
+1. I went to where the button is renderd in the code.
+2. I then changed the rendereing condition to the appropriate one.
